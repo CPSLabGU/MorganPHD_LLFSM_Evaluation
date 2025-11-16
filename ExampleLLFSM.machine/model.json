@@ -1,0 +1,44 @@
+{
+    "states": [
+        {
+            "name": "S0",
+            "variables": "",
+            "externalVariables": "x\nz",
+            "actions": [
+                {
+                    "name": "Internal",
+                    "code": "z <= x;"
+                },
+                {
+                    "name": "OnEntry",
+                    "code": ""
+                },
+                {
+                    "name": "OnExit",
+                    "code": ""
+                }
+            ],
+            "layout": {
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "dimensions": {
+                    "x": 200,
+                    "y": 100
+                }
+            }
+        }
+    ],
+    "externalVariables": "x: in std_logic;\nz: out std_logic;",
+    "machineVariables": "",
+    "includes": "library IEEE;\nuse IEEE.std_logic_1164.all;",
+    "transitions": [],
+    "initialState": "S0",
+    "clocks": [
+        {
+            "name": "clk",
+            "frequency": "125 MHz"
+        }
+    ]
+}
